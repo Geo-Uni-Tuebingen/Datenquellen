@@ -1,5 +1,5 @@
 # Impressum für die Seite "Übersicht und Orientierungshilfe für Datenquellen in der Geoinformatik"
-[https://134.2.216.52/#/](https://geo-uni-tuebingen.github.io/Datenquellen/)
+[(https://geo-uni-tuebingen.github.io/Datenquellen/)](https://geo-uni-tuebingen.github.io/Datenquellen/)
 
 Diese Seite dient Studierenden der Geographie und anderen Fachrichtungen bei der Identifikation geeigneter Datenquellen für ihre Studien- und Abschlussarbeiten. Sie wurde im Rahmen der Lehrveranstaltungen am Lehrstuhl für Physische Geographie und Geographische Informationssysteme (Prof. Dr. Volker Hochschild) am Forschungsbereich Geographie an der Eberhard-Karls Universität Tübingen angelegt. 
 
