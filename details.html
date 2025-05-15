@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4a90e2;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Kurzbeschreibung</th>
+                <th>Datenverfügbarkeit</th>
+                <th>Zugriff</th>
+            </tr>
+        </thead>
+        <tbody id="data-table">
+        </tbody>
+    </table>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const params = new URLSearchParams(window.location.search);
+            const Filter = params.get("Filter");
+            document.getElementById("title").innerText = Filter;
+
+            Papa.parse("data_ready.csv", {
+                download: true,
+                header: true,
+                delimiter: ";",
+                complete: function (result) {
+                    console.log("CSV-Daten:", result.data);
+                    const filteredData = result.data.filter(row => row.Filter?.trim() === Filter);
+                    const tableBody = document.getElementById("data-table");
+                    
+                    console.log("Gefilterte Daten:", filteredData);
+
+                    filteredData.forEach(row => {
+                        let tr = document.createElement("tr");
+                        tr.innerHTML = `<td>${row.Herausgeber}</td><td>${row.Kurzbeschreibung}</td><td>${row.Region}</td><td><a href="${row.Link}" target="_blank">Link</a></td>`;
+                        tableBody.appendChild(tr);
+                    });
+                    function fixEncoding(text) {
+                        return text
+                        .replace(/Ã¤/g, "ä")
+                        .replace(/Ã¶/g, "ö")
+                        .replace(/Ã¼/g, "ü")
+                        .replace(/ÃÄ/g, "Ä")
+                        .replace(/Ã–/g, "Ö")
+                        .replace(/Ãœ/g, "Ü")
+                        .replace(/ÃŸ/g, "ß");
+                    }
+
+// Wende die Funktion auf alle Tabelleninhalte an
+document.querySelectorAll("td").forEach(td => {
+    td.innerHTML = fixEncoding(td.innerHTML);
+});
+
+                }
+            });
+        });
+    </script>
+</body>
+</html>

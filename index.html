@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startseite Datenquellen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("IMG/background.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            width: fit-content;
+            margin: 20px auto;
+            border-radius: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 15px;
+            width: 100%;
+            max-width: 3000px;
+            padding-bottom: 100px;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .grid-2-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .tile {
+            background-color: #4a90e2;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            padding: 15px;
+            cursor: pointer;
+            border: 2px solid #fff;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .tile:hover {
+            opacity: 0.8;
+        }
+        .main-tile {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 20px;
+        }
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            font-size: 14px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 0; 
+        }
+        .impressum-link {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        .impressum-link a {
+            color: white;
+            font-size: 12px;
+            text-decoration: none;
+        }
+        .impressum-link a:hover {
+            text-decoration: underline;
+        }
+        .blue { background-color: #357abd; } 
+        .light-blue { background-color: #5faee3; } 
+        .red { background-color: #b22222; } 
+        .light-red { background-color: #e57373; } 
+        .dark-gray { background-color: #555555; }
+        .gray { background-color: #888; } 
+    </style>
+</head>
+<body>
+    <h1>Übersicht und Orientierungshilfe für Datenquellen in der Geoinformatik</h1>
+    <div class="container">
+        <!-- Linke Spalte: Physische Geographie -->
+        <div class="column">
+            <div class="tile main-tile blue" onclick="loadData('Physisch-Geographisch')">Physische Geographie</div>
+            <div class="tile light-blue" onclick="loadData('Geologie-Boden')">Geologie & Boden</div>
+            <div class="tile light-blue" onclick="loadData('Hydrologie')">Hydrologie</div>
+            <div class="tile light-blue" onclick="loadData('Klima-Wetter')">Klima & Wetter</div>
+            <div class="tile light-blue" onclick="loadData('Flora-Fauna')">Flora & Fauna</div>
+            <div class="tile light-blue" onclick="loadData('DHM')">Digitale Höhenmodelle</div>
+            <div class="tile light-blue" onclick="loadData('Fernerkundung')">Fernerkundung</div>
+            <div class="tile light-blue" onclick="loadData('Landbedeckung')">Landbedeckung</div>
+            <div class="tile light-blue" onclick="loadData('Umweltdaten')">Umweltdaten</div>
+            <div class="tile light-blue" onclick="loadData('Maritim')">Maritim</div>
+        </div>
+
+        <!-- 2. Spalte von links Spalte: Humangeographisch -->
+        <div class="column">
+            <div class="tile main-tile red" onclick="loadData('Humangeographisch')">Humangeographie</div>
+            <div class="tile light-red" onclick="loadData('Administrativ')">Administrativ</div>
+            <div class="tile light-red" onclick="loadData('Staedte')">Städte</div>
+            <div class="tile light-red" onclick="loadData('Wirtschaft')">Wirtschaft</div>
+            <div class="tile light-red" onclick="loadData('Bevoelkerung')">Bevölkerung</div>
+            <div class="tile light-red" onclick="loadData('Katastrophen')">Katastrophen</div>
+            <div class="tile light-red" onclick="loadData('Landwirtschaft')">Landwirtschaft</div>
+            <div class="tile light-red" onclick="loadData('Historisch')">Historisch</div>
+            <div class="tile light-red" onclick="loadData('Landnutzung')">Landnutzung</div>
+        </div>
+
+        <!-- 2. Spalte von rechts: Sonstige Themen -->
+        <div class="column">
+            <div class="tile main-tile dark-gray" onclick="loadData('Sonstige')">Weiterführende Informationen</div>
+            <div class="tile gray" onclick="loadData('Informationsportal')">Informationsportal</div>
+            <div class="tile gray" onclick="loadData('Tutorials')">Tutorials</div>
+            <div class="tile gray" onclick="loadData('Artikel')">Artikel</div>
+            <div class="tile gray" onclick="loadData('Visualisierung')">Visualisierung</div>
+            <div class="tile gray" onclick="loadData('Software')">Software</div>
+        </div>
+
+        <!-- Rechte Spalte: Region -->
+        <div class="column">
+            <div class="tile main-tile dark-gray" >Räumliche Verfügbarkeit</div>
+            <div class="tile gray" onclick="loadData('Global')">Global</div>
+            <div class="tile gray" onclick="loadData('Europa')">Europa</div>
+            <div class="tile gray" onclick="loadData('Afrika')">Afrika</div>
+            <div class="tile gray" onclick="loadData('Deutschland')">Deutschland</div>
+            <div class="tile gray" onclick="loadData('Baden-Wuerttemberg')">Baden-Württemberg</div>
+            <div class="tile gray" onclick="loadData('Bayern')">Bayern</div>
+            <div class="tile gray" onclick="loadData('Regional-Lokal')">Regional/Lokal</div>
+        </div>
+
+        <!-- Fußzeile -->
+        <div class="footer">
+            Eine Zusammentragung der Arbeitsgruppe Geoinformatik des Geographischen Instituts an der Eberhard Karls Universität Tübingen.
+            <br> Kontakt: Felix Weinschenk (<a href="mailto:felix.weinschenk@student.uni-tuebingen.de">felix.weinschenk@student.uni-tuebingen.de</a>)
+        </div>
+
+        <!-- Impressum-Link unten rechts -->
+         <div class="impressum-link">
+            <a href="impressum.html">Impressum</a>
+        </div>
+    </div>
+
+    <script>
+        function loadData(category) {
+            window.location.href = `details.html?Filter=${category}`;
+        }
+    </script>
+</body>
+</html>
