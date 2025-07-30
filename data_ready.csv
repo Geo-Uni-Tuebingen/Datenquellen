@@ -539,10 +539,10 @@ Global Human Settlement Layer;https://human-settlement.emergency.copernicus.eu/d
 Global Human Settlement Layer;https://human-settlement.emergency.copernicus.eu/download.php;Globale Datensätze zur Siedlungsstruktur und -entwicklung;Global;2025-04-22T00:00:00Z;Humangeographisch
 Global Human Settlement Layer;https://human-settlement.emergency.copernicus.eu/download.php;Globale Datensätze zur Siedlungsstruktur und -entwicklung;Global;2025-04-22T00:00:00Z;Staedte
 Global Human Settlement Layer;https://human-settlement.emergency.copernicus.eu/download.php;Globale Datensätze zur Siedlungsstruktur und -entwicklung;Global;2025-04-22T00:00:00Z;Bevoelkerung
-Klimaatlas BW;https://www.klimaatlas-bw.de/;Abfrage und Visualisierung der Folgen des Klimawandels in Baden-Württemberg;Baden-Wuerttemberg;2025-04-22T00:00:00Z;Baden-Wuerttemberg
-Klimaatlas BW;https://www.klimaatlas-bw.de/;Abfrage und Visualisierung der Folgen des Klimawandels in Baden-Württemberg;Baden-Wuerttemberg;2025-04-22T00:00:00Z;Physisch-Geographisch
-Klimaatlas BW;https://www.klimaatlas-bw.de/;Abfrage und Visualisierung der Folgen des Klimawandels in Baden-Württemberg;Baden-Wuerttemberg;2025-04-22T00:00:00Z;Informationsportal
-Klimaatlas BW;https://www.klimaatlas-bw.de/;Abfrage und Visualisierung der Folgen des Klimawandels in Baden-Württemberg;Baden-Wuerttemberg;2025-04-22T00:00:00Z;Klima-Wetter
+Klimaatlas BW;https://www.klimaatlas-bw.de;Abfrage und Visualisierung der Folgen des Klimawandels in Baden-Württemberg;Baden-Wuerttemberg;2025-04-22T00:00:00Z;Baden-Wuerttemberg
+Klimaatlas BW;https://www.klimaatlas-bw.de;Abfrage und Visualisierung der Folgen des Klimawandels in Baden-Württemberg;Baden-Wuerttemberg;2025-04-22T00:00:00Z;Physisch-Geographisch
+Klimaatlas BW;https://www.klimaatlas-bw.de;Abfrage und Visualisierung der Folgen des Klimawandels in Baden-Württemberg;Baden-Wuerttemberg;2025-04-22T00:00:00Z;Informationsportal
+Klimaatlas BW;https://www.klimaatlas-bw.de;Abfrage und Visualisierung der Folgen des Klimawandels in Baden-Württemberg;Baden-Wuerttemberg;2025-04-22T00:00:00Z;Klima-Wetter
 Hochwasseratlas;https://tigis.bkg.bund.de/hochwasseratlas/;Deutschlandweites Monitoring ausgewählter Flusspegelstände;Deutschland;2025-04-22T00:00:00Z;Deutschland
 Hochwasseratlas;https://tigis.bkg.bund.de/hochwasseratlas/;Deutschlandweites Monitoring ausgewählter Flusspegelstände;Deutschland;2025-04-22T00:00:00Z;Physisch-Geographisch
 Hochwasseratlas;https://tigis.bkg.bund.de/hochwasseratlas/;Deutschlandweites Monitoring ausgewählter Flusspegelstände;Deutschland;2025-04-22T00:00:00Z;Informationsportal
@@ -555,3 +555,15 @@ Hochwasservorhersagezentrale Baden-Württemberg;https://www.hvz.baden-wuerttembe
 Hochwasservorhersagezentrale Baden-Württemberg;https://www.hvz.baden-wuerttemberg.de;Landesweite Sammlung offizieller Pegeldaten, Abfrage aktueller und durchschnittlicher Kennwerte;Baden-Wuerttemberg;2025-04-22T00:00:00Z;Klima-Wetter
 Hochwasservorhersagezentrale Baden-Württemberg;https://www.hvz.baden-wuerttemberg.de;Landesweite Sammlung offizieller Pegeldaten, Abfrage aktueller und durchschnittlicher Kennwerte;Baden-Wuerttemberg;2025-04-22T00:00:00Z;Hydrologie
 Hochwasservorhersagezentrale Baden-Württemberg;https://www.hvz.baden-wuerttemberg.de;Landesweite Sammlung offizieller Pegeldaten, Abfrage aktueller und durchschnittlicher Kennwerte;Baden-Wuerttemberg;2025-04-22T00:00:00Z;Visualisierung
+Energieatlas BW;https://www.energieatlas-bw.de/;Landesweite Daten zu Energiequellen und Netzinfrastruktur;Baden-Wuerttemberg;;Baden-Wuerttemberg
+Energieatlas BW;https://www.energieatlas-bw.de/;Landesweite Daten zu Energiequellen und Netzinfrastruktur;Baden-Wuerttemberg;;Physisch-Geographisch
+Energieatlas BW;https://www.energieatlas-bw.de/;Landesweite Daten zu Energiequellen und Netzinfrastruktur;Baden-Wuerttemberg;;Humangeographisch
+Energieatlas BW;https://www.energieatlas-bw.de/;Landesweite Daten zu Energiequellen und Netzinfrastruktur;Baden-Wuerttemberg;;Informationsportal
+Copernicus Interactive Climate Atlas;https://atlas.climate.copernicus.eu/atlas;Visualiserung, Vergleich und Export von Klimaszenarien und deren Auswirkungen auf die unterschiedlichen Geosphären;Global;;Global
+Copernicus Interactive Climate Atlas;https://atlas.climate.copernicus.eu/atlas;Visualiserung, Vergleich und Export von Klimaszenarien und deren Auswirkungen auf die unterschiedlichen Geosphären;Global;;Physisch-Geographisch
+Copernicus Interactive Climate Atlas;https://atlas.climate.copernicus.eu/atlas;Visualiserung, Vergleich und Export von Klimaszenarien und deren Auswirkungen auf die unterschiedlichen Geosphären;Global;;Sonstige
+Copernicus Interactive Climate Atlas;https://atlas.climate.copernicus.eu/atlas;Visualiserung, Vergleich und Export von Klimaszenarien und deren Auswirkungen auf die unterschiedlichen Geosphären;Global;;Informationsportal
+Copernicus Interactive Climate Atlas;https://atlas.climate.copernicus.eu/atlas;Visualiserung, Vergleich und Export von Klimaszenarien und deren Auswirkungen auf die unterschiedlichen Geosphären;Global;;Klima-Wetter
+Copernicus Interactive Climate Atlas;https://atlas.climate.copernicus.eu/atlas;Visualiserung, Vergleich und Export von Klimaszenarien und deren Auswirkungen auf die unterschiedlichen Geosphären;Global;;Hydrologie
+OWS Terrestris;https://www.terrestris.de/en/openstreetmap-wms/;Hintergrundkarten für OSM als WMS-Adressen;Global;;Global
+OWS Terrestris;https://www.terrestris.de/en/openstreetmap-wms/;Hintergrundkarten für OSM als WMS-Adressen;Global;;Hintergrundkarten und Dienste
